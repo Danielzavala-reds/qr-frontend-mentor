@@ -1,0 +1,59 @@
+$body-color: hsl(212, 45%, 89%);
+$global-font: 'Outfit', sans-serif;
+$content-bg: hsl(0, 0%, 100%);
+$p-color: hsl(220, 15%, 55%);
+
+body, html{
+    margin: 0px;
+    padding: 0px;
+    background-color: $body-color;
+    font-family: $global-font;
+    font-size: 15px;
+}
+
+
+.container{
+    display: flex;
+    width: 99%;
+    margin: 0px auto;
+    height: 97vh;
+    justify-content: center;
+    align-items: center;
+    
+    .content{
+        width: 287px;
+        height: 500px;
+        border-radius: 20px;
+        background-color: $content-bg;
+
+        .qr{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 270px;
+
+            img{
+                margin-top: 8px;
+                width: 255px;
+                height: 250px;
+                border-radius: 8px;
+
+            }
+        }
+
+        .text{
+            margin-top: 24px;
+            text-align: center;
+            height: 164px;
+
+            h2{
+                margin: 10px;
+            }
+            p{
+                color: $p-color;
+                padding: 15px;
+            }
+        }
+    }
+}
